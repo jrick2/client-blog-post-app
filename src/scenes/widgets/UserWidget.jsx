@@ -22,7 +22,7 @@ const UserWidget = ({ userId, picturePath }) => {
   const main = palette.neutral.main;
 
   const getUser = async () => {
-    const response = await fetch(`https://server-blog-post-app.onrender.com/${userId}`, {
+    const response = await fetch(`https://server-blog-post-app.onrender.com/users/${userId}`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
